@@ -10,6 +10,7 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   background-image: url("Assets/Images/background.jpg");
   background-color: #3268bd;
   max-height: 100%;
@@ -18,6 +19,64 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Comic Sans MS", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a50000;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #3268bd;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .page-title {
@@ -88,11 +147,6 @@ body {
   background-color: black;
   border-color: #3268bd;
   transform: rotateY(0); 
-}
-
-.card-face:hover .cob-web {
-  width: 52px;
-  height: 52px;
 }
 
 .cardback {
@@ -174,11 +228,42 @@ body {
 }
 
 @media (max-width: 600px) {
-  .game-container {
-    grid-template-columns: repeat(2, auto)
-  }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-  .game-info-container {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .game-container {
+    grid-template-columns: repeat(2, auto)
+    }
+
+    .game-info-container {
     flex-direction: column;
     align-items: center;
   }
