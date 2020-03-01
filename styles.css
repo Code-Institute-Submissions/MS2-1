@@ -21,6 +21,10 @@ body {
   font-family: "Comic Sans MS", sans-serif;
 }
 
+ol {
+    color: white;
+    font-family: "Comic Sans MS", sans-serif;
+}
 .navbar {
     display: flex;
     position: relative;
