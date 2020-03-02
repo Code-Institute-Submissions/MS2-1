@@ -211,6 +211,12 @@ ol {
   animation: overlay-grow 500ms forwards;
 }
 
+.google-maps {
+    margin: 0;
+    padding: 0;
+    border-radius: 2px;
+}
+
 @keyframes dance {
   0%, 100% {
     transform: rotate(0)
@@ -234,7 +240,7 @@ ol {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -266,6 +272,9 @@ ol {
         display: flex;
     }
 
+    .page-title {
+        font-size: 350%;
+    }
     .game-container {
     grid-template-columns: repeat(2, auto)
     }
