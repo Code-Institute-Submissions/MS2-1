@@ -69,7 +69,7 @@ There have been several issues throughout development with my JS code breaking, 
 
 <h2>Deployment</h2>
 
-<p>This project is hosted on GitHub pages here</p>
+<p>This project is hosted on GitHub pages here https://noelquirke.github.io/MS2/</p>
 
 <h2>Credits</h2>
 
